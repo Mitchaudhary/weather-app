@@ -8,6 +8,7 @@
 // =========================================================
 const API_KEY = "5d2e071a69c7693d0491803260a14a11";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
+const DEFAULT_CITY = "Mumbai";
 
 // =========================================================
 // DOM Elements
@@ -278,3 +279,8 @@ fahrenheitBtn.addEventListener("click", () => {
   updateTemperatures();
   updateWindSpeed();
 });
+
+// Load Mumbai weather when the app opens.
+cityInput.value = DEFAULT_CITY;
+clearBtn.style.display = "block";
+fetchWeather(DEFAULT_CITY);
