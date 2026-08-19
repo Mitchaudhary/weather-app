@@ -6,7 +6,7 @@
 // =========================================================
 // Configuration & Constants
 // =========================================================
-const API_KEY = APIKEY;
+const API_KEY = "5d2e071a69c7693d0491803260a14a11";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 // =========================================================
